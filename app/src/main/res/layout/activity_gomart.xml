@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gomart"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_titel"
+        android:layout_width="120dp"
+        android:layout_height="98dp"
+        android:src="@drawable/menu_gomart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/bungkus_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/img_titel">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_titel"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama :"
+                android:textSize="18dp"
+                />
+            <EditText
+                android:id="@+id/txtNama"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat :"
+                android:textSize="18dp"
+                />
+            <EditText
+                android:id="@+id/txtAlamat"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order :"
+                android:textSize="18dp"
+                />
+            <EditText
+                android:id="@+id/txtOrder"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bungkus_input"
+        android:layout_centerInParent="true"
+        android:textColor="#F0F1F1"
+        android:background="#E20363F4"
+        android:layout_marginTop="10dp"
+        android:text="Order"
+        />
+</RelativeLayout>
